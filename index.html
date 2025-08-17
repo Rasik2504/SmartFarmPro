@@ -72,9 +72,18 @@ section p{font-size:1rem;color:var(--text-light);max-width:800px;margin:auto;mar
 
 footer{text-align:center;padding:50px 20px;color:var(--text-light);font-size:0.95rem;border-top:1px solid #27ae60;}
 
+/* Mobile adjustments */
 @media(max-width:480px){
-  .download-section{flex-direction:column;}
-  .download-section .btn{width:100%;}
+  .download-section {
+    flex-direction: column;
+    gap: 12px; /* reduce space between buttons */
+  }
+  .download-section .btn {
+    width: 100%;
+    font-size: 0.95rem; /* smaller text */
+    padding: 12px 0;   /* smaller padding */
+    max-width: 100%;   /* fit screen width */
+  }
 }
 </style>
 </head>
@@ -138,7 +147,7 @@ footer{text-align:center;padding:50px 20px;color:var(--text-light);font-size:0.9
 <div class="download-section">
   <a href="Smart Farm Pro.apk" class="btn">📱 Download Android</a>
   <a href="https://apps.apple.com/your-app-link" class="btn">🍎 Download iOS</a>
-  <a href="https://smart-farm-pro.lovable.app/" class="btn">🌐 Open Web App</a>
+  <a href="https://yourwebapp.com" class="btn" target="_blank">🌐 Open Web App</a>
 </div>
 
 <footer>
